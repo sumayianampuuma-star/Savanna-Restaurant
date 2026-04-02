@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savanna Bites - Restaurant</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"> Savanna Bites</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white text-center py-5" style="background:url('images/interior1.jpg')  center/cover no-repeat;">
+        
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold mb-4">Welcome to Savanna Bites</h1>
+            <p class="lead mb-4">"Delicious African & Continental Cuisine"</p>
+            <a href="contact.html" class="btn btn-lg btn-warning">Reserve a table</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Featured Dishes</h2>
+            <div class="row g-4">
+                <div class="col-md-4">    
+                    <div class="card border-0 shadow-sm h-100 text-center p-4">
+                        <h5 class="card-title">Appetizers</h5>
+                        <img src="images/food1.jpg" alt="image">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 text-center p-4">
+                        <h5 class="card-title">Local foods</h5>
+                        <img src="images/image1.jpg" alt="images">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 text-center p-4">
+                        <h5 class="card-title">Grilled Chicken</h5>
+                        <img src="images/image5.jpg" alt="images">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h2 class="mb-4">Testimonials</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel"></div>
+            <div class="carousel-inner text-center"></div>
+            <div class="carousel-item active"></div>
+            <p class="lead">Excellent service and a beautiful atmosphere, Highly recomended"</p>
+            <h5> -Josephine N-</h5>
+        </div>
+        <div class="carousel-item active"></div>
+            <p class="lead">Well organised restaurant with amazing food in Kampala</p>
+            <h5> -Milly Shaba-</h5>
+        </div>
+        <div class="carousel-item active"></div>
+            <p class="lead">Savanna Bites has a welcoming team with beautiful smiles and delicious foods at affordable prices</p>
+            <h5> -Keira M-</h5>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2026 Savanna Bites Restaurant. All rights reserved.</p>
+            <p>Follow us on social media for daily updates and specials!</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

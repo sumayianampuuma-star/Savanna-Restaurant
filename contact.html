@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Savanna Bites</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Savanna Bites</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-dark text-white py-5">
+        <div class="container">
+            <h1 class="display-4">Contact Us</h1>
+            <p class="lead">We'd Love to Hear From You</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <h2 class="mb-4">Send us a Message</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Date</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                         <div class="mb-3">
+                            <label for="phone" class="form-label">Number of people</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                    
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning btn-lg w-100">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-lg-5">
+                    <h2 class="mb-4">Get in Touch</h2>
+                    
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">📍 Address</h5>
+                            <p class="card-text text-muted">
+                                Namirembe Road<br>
+                                Kampala - Uganda
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">📞 Phone</h5>
+                            <p class="card-text text-muted">
+                                <strong>Main:</strong> +256 750172181<br>
+                                <strong>Reservations:</strong> +256 765288753
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">✉️ Email</h5>
+                            <p class="card-text text-muted">
+                                <strong>Info:</strong> info@savannabitesrestaurant.com<br>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!-- Reservation Modal -->
+    <div class="modal fade" id="reservationModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">Make a Reservation</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="resName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="resName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="resEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="resEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="resPhone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="resPhone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="resDate" class="form-label">Date</label>
+                            <input type="date" class="form-control" id="resDate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="resTime" class="form-label">Time</label>
+                            <input type="time" class="form-control" id="resTime" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="resGuests" class="form-label">Number of Guests</label>
+                            <input type="number" class="form-control" id="resGuests" min="1" max="20" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning">Confirm Reservation</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   </body>
+</html>
